@@ -14,6 +14,7 @@ import ChapterNineteen from './components/ChapterNineteen';
 import Countdown from './components/Countdown';
 import Quiz from './components/Quiz';
 import ProgressBar from './components/ProgressBar';
+import { Analytics } from '@vercel/analytics/react';
 
 const App: React.FC = () => {
   // New Flow: Countdown -> Intro -> Chapter -> Main
