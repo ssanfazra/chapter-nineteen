@@ -7,9 +7,10 @@ interface CountdownProps {
 }
 
 const Countdown: React.FC<CountdownProps> = ({ onComplete }) => {
-  // Development mode: Set countdown to 5 seconds from now for testing
+  // Target date: January 28, 2026
   const [targetDate] = useState(() => {
-    return new Date().getTime() + 5000; // 5 seconds
+    // return new Date().getTime() + 5000; 
+    return new Date('2026-01-28T00:00:00').getTime();
   });
 
   const [timeLeft, setTimeLeft] = useState({
